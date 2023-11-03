@@ -1,187 +1,197 @@
-.title{
-	font-size: 36px;
-	padding-top: 10px;
-	background-color: #2F4F4F;
-}
-
-a{
-	color: black;
-}
-
-.wrapped{
-	background: #AFEEEE;
-	max-width: 960px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-.header{
-	width:100%; 
-	background: #008080;
-    	height:120px;
-}
-
-b{
-	color: white;
-}
-
-#footer {
-	background-color: #2F4F4F;
-	color: white;
-	padding: 20px;
-	width:100%; 
-	margin: 0;
-}
-
-.container { 
-  align-self: center; /* выравнивание по вертикали */
-  justify-content: center; /* выравнивание по горизонтали */
-	display: flex; 
-
-	align-items: center; 
-	
-	margin: 0; 
-} 
-	
-table {
-	 border-collapse: collapse;
-}
-   
-th, td { 
-	padding: 10px; 
-	border: 1px solid black;
-} 
-
-tr:nth-child(even) { 
-	background-color: #DCDCDC; 
-} 
-	
-tr:nth-child(odd) { 
-	background-color: #A9A9A9; 
-}
-
-#links {
-  align-self: center; /* выравнивание по вертикали */
-  justify-content: center; /* выравнивание по горизонтали */
-	display: flex;
-
-	align-items: center;
-	text-align: center;
-}
-
-#form {
-  align-self: center; /* выравнивание по вертикали */
-  justify-content: center; /* выравнивание по горизонтали */
-}
-
-.sideBar{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 150px;
-	width: 150px;
-	border-right: 1px solid ;
-	background-color:#2F4F4F;
-	padding: 10px;
-}
-
-.sideBar_item{
-	padding: 8px 10px;
-	font-size: 18px;
-}
-
-@media only screen and (max-width: 600px) {
-    .title{
-		font-size: 36px;
-		padding-top: 10px;
-		background-color: #2F4F4F;
-	}
-	
-	a{
-		color: black;
-	}
-	
-	.wrapped{
-		order: 2;
-		background: #AFEEEE;
-		display: flex;
-        flex-direction: column;
-		max-width: 960px;
-		padding-left: 16px;
-		padding-right: 16px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
-	
-	.header{
-		width:100%; 
-		background: #008080;
-			height:120px;
-	}
-	
-	b{
-		color: white;
-	}
-
-	#footer {
-		background-color: #2F4F4F;
-		color: white;
-		padding: 20px;
-		width:100%; 
-		margin: 0;
-	}
-	
-	.container { 
-		order: -1;
-		padding-top: 10px;
-		justify-content: center; 
-		align-items: center; 
-		width:100%;  
-		margin: 0; 
-	} 
-		
-	table {
-		 border-collapse: collapse;
-	}
-	   
-	th, td { 
-		padding: 10px; 
-		border: 1px solid black;
-	} 
-	
-	tr:nth-child(even) { 
-		background-color: #DCDCDC; 
-	} 
-		
-	tr:nth-child(odd) { 
-		background-color: #A9A9A9; 
-	}
-	
-	#links {
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	
-	#form {
-		order: 3;
-		text-align: center;
-	}
-}
-
-
-.menu a {
-	text-align: center;
-	display: block;
-}
-.menu {
-	flex-direction: column;
-	align-items: center;
-	display: block; 
-	margin-top: 40px;
-	margin-left: 60px;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+    <link rel="stylesheet" href="css/styles31.css"> 
+</head>
+<body>
+    <div class="header">
+        <img style="float:left; margin:10px; width:100px; height:100px;" src="img/logo.png" />
+        <div class = "title">
+            <b>Название сайта</b>
+        </div>
+    </div>
+    <div class="sideBar">
+        <div class="sideBar_section">
+            <div class="sideBar_item"><a href = "#links" style="color: white">Гиперссылки</a></div>
+            <div class="sideBar_item"><a href = "#container" style="color: white">Таблица</a></div>
+            <div class="sideBar_item"><a href = "#form" style="color: white">Форма</a></div>
+        </div>
+    </div>
+    <div class="wrapped">
+        <div id="links">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="http://kubsu.ru/" >Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a>
+                    </li> 
+                    <li>
+                        <a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a>
+                    </li>
+                    <li>
+                        <a href="https://kubsu.ru/"><img src="img/01.png" alt="" height="60px"></a>
+                    </li>
+                    <li>
+                        <a href="./">Сокращённая ссылка на главную</a>
+                    </li>
+                    <li>
+                        <a href="#text">Cсылка на фрагмент текущей страницы</a>
+                    </li> 
+                    <li>
+                        <a href="https://www.kubsu.ru/index.php?parameter1=p1&parameter2=p2&parametr3=p3/">Ссылка с 3-мя параметрами в URL</a>
+                    </li>   
+                    <li>
+                        <a href="https://www.kubsu.ru/index.php#anchor">Cсылка на фрагмент страницы стороннего сайта</a>
+                    </li>
+                    <li>
+                        <a="">Cсылка без href</a>
+                    </li>
+                    <li>
+                        <a href="">Cсылка с пустым href</a>
+                    </li>
+                    <li>
+                        <a href="../vnutr.html">Относительная на страницу в каталоге уровнем выше текущего</a>
+                    </li>
+                    <li>
+                        <a href="../../vnutr.html">Относительная на страницу в каталоге двумя уровнями выше текущего</a>
+                    </li>
+                    <li>
+                        <p>
+                            Контекстная 
+                            <a href="https://example.com"><i>ссылка</i></a>
+                            в тексте абзаца
+                        </p>
+                    </li>
+                    <li>
+                        <a href="https://example.com" rel="notfollow">
+                            Запрещенная для индексации поисковиками
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ftp://user1:1000@example.com/file.html">Ссылка на файл на сервере FTP c авторизацией</a>
+                    </li> 
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container">
+            <div id="container">
+                <table> 
+                    <tr> 
+                        <th>Колонка 1</th> 
+                        <th>Колонка 2</th> 
+                        <th colspan="2">Колонка 3 и 4</th> 
+                    </tr> 
+                    <tr> 
+                        <td>Ячейка 1</td> 
+                        <td>Ячейка 2</td> 
+                        <td>Ячейка 3</td> 
+                        <td>Ячейка 4</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Ячейка 5</td> 
+                        <td>Ячейка 6</td> 
+                        <td>Ячейка 7</td> 
+                        <td>Ячейка 8</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Ячейка 9</td> 
+                        <td>Ячейка 10</td> 
+                        <td>Ячейка 11</td> 
+                        <td>Ячейка 12</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Ячейка 13</td> 
+                        <td>Ячейка 14</td> 
+                        <td>Ячейка 15</td> 
+                        <td>Ячейка 16</td> 
+                    </tr> 
+                </table> 
+            </div>
+        </div>
+    
+        <div id="form">
+            <h2>Форма</h2>
+            <form action="/" method="POST">
+            <label>
+                ФИО:
+                <br>
+                <input name="fio" value="введите фио">
+            </label>
+            <br>
+            <label>
+                Телефон:
+                <br>
+                <input name="telephone" value="8-900-000-00-00" type="tel">
+            </label>
+            <br>
+            <label>
+                Email:
+                <br>
+                <input name="email" type="type-email" placeholder="введите вашу почту">
+            </label>
+            <br>
+            <label>
+                Дата рождения:
+                <br>
+                <input name="date" value="2000-01-01" type="date">
+            </label>
+            <br>
+            Пол:
+            <br>
+            <label>
+                <input type="radio" checked="checked" name="radio1" value="Значение1">
+                Мужской
+            </label>
+            <label>
+                <input type="radio" name="radio1" value="Значение2">
+                Женский
+            </label>
+            <br>
+            <label>
+                Любимый язык программирования:
+                <br>
+                <select name="lang[]" multiple="multiple">
+                    <option value="Значение 1" selected="selected">Pascal</option>
+                    <option value="Значение 2" selected="selected">C</option>
+                    <option value="Значение 3" selected="selected">C++</option>
+                    <option value="Значение 4" selected="selected">JavaScript</option>
+                    <option value="Значение 5" selected="selected">PHP</option>
+                    <option value="Значение 6" selected="selected">Python</option>
+                    <option value="Значение 7" selected="selected">Java</option>
+                    <option value="Значение 8" selected="selected">Haskel</option>
+                    <option value="Значение 9" selected="selected">Clojure</option>
+                    <option value="Значение 10" selected="selected">Prolog</option>
+                    <option value="Значение 11" selected="selected">Scala</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                Биография: 
+                <br>
+                <textarea name="bio"></textarea>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" checked="checked" name="check1">
+                С контрактом ознакомлен(-а):
+            </label>
+            <br>
+            <input type="submit" value="Сохранить">
+            </form>
+        </div>
+    </div>
+    <br>
+    <footer id="footer">
+        (c) Елизавета Олейник
+    </footer>
+</body>
+</html>
