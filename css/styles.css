@@ -1,225 +1,59 @@
-.title{
-	font-size: 36px;
-	padding-top: 10px;
-	background-color: #2F4F4F;
+/*все отступы и поля элемента будут установлены на ноль
+*{margin:0;padding:0;}
+*/
+body{font-family:roboto;}
+
+/*header*/
+header .head-top{
+    height: 120px;
+    background-color: #008080;
+}
+.header-wrap{
+    background-color:#2F4F4F;
+}
+/*логотип*/
+.logo{
+    height:100px;
+    width:100px;
+
+}
+/*название*/
+.name{
+    color:#fff;
+}
+/*контент*/
+.wrapper{
+    background-color:#AFEEEE;
 }
 
-a{
-	color: black;
-}
+/*table{
+    border-spacing:5px;
+    color:rgb(0, 0, 0);
+    border-radius:20px;
+    width:60%;
+    border-collapse: collapse;
+}*/
 
-.wrapped{
-	background: #AFEEEE;
-	max-width: 960px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+/*ссылки в контенте*/
+li a{
+    color: #000;
 }
-
-.header{
-	width:100%; 
-	background: #008080;
-    	height:120px;
-}
-
-b{
-	color: white;
-}
-
-#footer {
-	background-color: #2F4F4F;
-	color: white;
-	padding: 20px;
-	width:100%; 
-	margin: 0;
-}
-
-.container { 
-  align-self: center; /* выравнивание по вертикали */
-  justify-content: center; /* выравнивание по горизонтали */
-	display: flex; 
-
-	align-items: center; 
-	
-	margin: 0; 
-} 
-	
-table {
-	 border-collapse: collapse;
-}
-   
+/**/
 th, td { 
-	padding: 10px; 
-	border: 1px solid black;
+   padding: 10px; 
+   border: 1px solid black;
 } 
 
 tr:nth-child(even) { 
-	background-color: #DCDCDC; 
+   background-color: #DCDCDC; 
 } 
-	
+   
 tr:nth-child(odd) { 
-	background-color: #A9A9A9; 
+   background-color: #A9A9A9; 
 }
-
-#links {
-  align-self: center; /* выравнивание по вертикали */
-  justify-content: center; /* выравнивание по горизонтали */
-	display: flex;
-
-	align-items: center;
-	text-align: center;
-}
-
-#form {
-  align-self: center; /* выравнивание по вертикали */
-  justify-content: center; /* выравнивание по горизонтали */
-}
-
-.sideBar_item{
-	padding: 8px 10px;
-	font-size: 18px;
-}
-
-.menu a {
-	text-align: center;
-	display: block;
-}
-
-.menu {
-	flex-direction: column;
-	align-items: center;
-	display: block; 
-	margin-top: 40px;
-	margin-left: 60px;
-}
-
-html {
-	font-size: 10px;
-}
-
-body {
-	font-size: 10pt;
-	padding: 10px;
-}
-
-main, aside {
+/*футер*/
+.footer {
 	background-color: #2F4F4F;
-	padding: 10px;
-	font-family: serif;
-	height: 100%;
+	color: white;
 }
 
-@media only screen and (max-width: 600px) {
-    .title{
-		font-size: 36px;
-		padding-top: 10px;
-		background-color: #2F4F4F;
-	}
-	
-	a{
-		color: black;
-	}
-	
-	.wrapped{
-		order: 2;
-		background: #AFEEEE;
-		display: flex;
-        flex-direction: column;
-		max-width: 960px;
-		padding-left: 16px;
-		padding-right: 16px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
-	
-	.header{
-		width:100%; 
-		background: #008080;
-			height:120px;
-	}
-	
-	b{
-		color: white;
-	}
-
-	#footer {
-		background-color: #2F4F4F;
-		color: white;
-		padding: 20px;
-		width:100%; 
-		margin: 0;
-	}
-	
-	.container { 
-		order: -1;
-		padding-top: 10px;
-		justify-content: center; 
-		align-items: center; 
-		width:100%;  
-		margin: 0; 
-	} 
-		
-	table {
-		 border-collapse: collapse;
-	}
-	   
-	th, td { 
-		padding: 10px; 
-		border: 1px solid black;
-	} 
-	
-	tr:nth-child(even) { 
-		background-color: #DCDCDC; 
-	} 
-		
-	tr:nth-child(odd) { 
-		background-color: #A9A9A9; 
-	}
-	
-	#links {
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	
-	#form {
-		order: 3;
-		text-align: center;
-	}
-
-	.sideBar_item{
-		padding: 8px 10px;
-		font-size: 18px;
-	}
-
-	.menu a {
-		text-align: center;
-		display: block;
-	}
-	.menu {
-		flex-direction: column;
-		align-items: center;
-		display: block; 
-		margin-top: 40px;
-		margin-left: 60px;
-	}
-
-	html {
-		font-size: 10px;
-	}
-
-	body {
-		font-size: 10pt;
-		padding: 10px;
-	  }
-
-	main, aside {
-		background-color: #2F4F4F;
-		padding: 10px;
-		font-family: serif;
-		height: 100%;
-	}
-}
